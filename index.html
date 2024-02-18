@@ -493,10 +493,10 @@
                             <div id="discount" class="flex justify-center hidden mt-4">
                                 <li class="flex justify-between w-full text-base font-medium">
                                     <p>Discount</p>
-                                    <p>BDT <span id="discount">0</span></p>
+                                    <p>BDT <span id="discount-price">0</span></p>
                                 </li>
                             </div>
-                            <div id="gayebul-hawa" class="mt-4 rounded-lg bg-white flex p-2"><input
+                            <div id="gayebul-hawa" class="mt-4 rounded-lg bg-white flex p-2"><input id="input-field"
                                     class="input input-ghost w-full bg-white" type="text"
                                     placeholder="Have any coupon?">
                                 <button id="discount-btn" class="btn text-white bg-[#1DD100]" disabled>Apply</button>
@@ -529,20 +529,24 @@
                         </div>
                         <div class="pt-4"><button id="next-btn" class="btn w-full bg-[#1DD100] text-white"
                                 onclick="my_modal_1.showModal()" disabled>Next</button>
-                            <dialog id="my_modal_1" class="modal">
+                            <dialog id="my_modal_1" class="modal max-w-[718px] mx-auto">
                                 <div class="modal-box flex flex-col justify-center items-center py-20">
                                     <img src="./images/success.png" alt="">
                                     <h3 class="font-bold text-2xl text-[#27AE60]">SUCCESS</h3>
-                                    <p class="pt-[38px] font-medium text-[20px] .font-roboto text-[#4A4A4A]">Thank
-                                        you for Booking Our Bus Seats. We are working hard to find the best service
-                                        and deals for you. </p>
-                                    <p class="font-light text-[#4A4A4A]">Shortly you will find a confirmation in
+                                    <p
+                                        class="pt-[38px] font-medium text-xl text-center font-roboto text-[#4A4A4A] mt-8">
+                                        Thank you for choosing us. We look forward to serving you again in the future
+                                        and wish you a pleasant and comfortable
+                                        journey. </p>
+                                    <p class="font-light text-[#4A4A4A] text-center font-roboto text-xl mt-2">Shortly
+                                        you will find a
+                                        confirmation in
                                         your email.</p>
                                     <div class="modal-action">
                                         <form method="dialog">
                                             <!-- if there is a button in form, it will close the modal -->
                                             <button
-                                                class="btn text-white bg-[#27AE60] w-[300px] rounded-3xl">Continue</button>
+                                                class="btn text-white text-center bg-[#27AE60] w-[300px] rounded-3xl">Continue</button>
                                         </form>
                                     </div>
                                 </div>

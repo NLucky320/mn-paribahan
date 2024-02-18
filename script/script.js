@@ -68,3 +68,29 @@ function grandTotal() {
   const convertedTotalCost = parseInt(totalCost);
   setElementValueById("grand-total", convertedTotalCost);
 }
+
+const discountBtn = document.getElementById("discount-btn");
+discountBtn.addEventListener("click", function () {
+  const couponElement = getInputValueById("input-field");
+  if (couponElement === "NEW15") {
+    const grandTotal = document.getElementById("total-price").innerText;
+    const convertedTotalCost = parseInt(grandTotal);
+    const discount = convertedTotalCost * 0.15;
+    const newGrandTotal = convertedTotalCost - discount;
+    document.getElementById("discount-price").innerText = discount;
+    setElementValueById("grand-total", newGrandTotal);
+    document.getElementById("gayebul-hawa").className = "hidden";
+    document.getElementById("discount").classList.remove("hidden");
+  } else if (couponElement === "Couple 20") {
+    const grandTotal = document.getElementById("total-price").innerText;
+    const convertedTotalCost = parseInt(grandTotal);
+    const discount = convertedTotalCost * 0.2;
+    const newGrandTotal = convertedTotalCost - discount;
+    document.getElementById("discount-price").innerText = discount;
+    setElementValueById("grand-total", newGrandTotal);
+    document.getElementById("gayebul-hawa").className = "hidden";
+    document.getElementById("discount").classList.remove("hidden");
+  } else {
+    alert("Invalid Coupon");
+  }
+});
