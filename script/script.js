@@ -38,28 +38,29 @@ for (const seatButton of allSeatButton) {
     }
     setElementValueById("available-seat", seat);
     setElementValueById("seat-count", seatCount);
+    grandTotal();
 
     const bookedSeat = parseInt(
       document.getElementById("seat-count").innerText
     );
-    console.log("hi", bookedSeat);
+
     if (bookedSeat > 3) {
       document.getElementById("discount-btn").removeAttribute("disabled");
     } else {
       document.getElementById("discount-btn").setAttribute("disabled", true);
     }
-    grandTotal();
 
-    const phoneNumber = document.getElementById("phone-number");
-    phoneNumber.addEventListener("keyup", function (event) {
-      const nextButton = document.getElementById("next-btn");
-      const number = event.target.value.toString().length;
-      if (bookedSeat > 0 && number > 0) {
-        nextButton.removeAttribute("disabled");
-      } else {
-        nextButton.removeAttribute("disabled", true);
-      }
-    });
+    document
+      .getElementById("phone-number")
+      .addEventListener("keyup", function (e) {
+        const number = e.target.value.toString().length;
+        const nextButton = document.getElementById("next-btn");
+        if (bookedSeat > 0 && number > 0) {
+          nextButton.removeAttribute("disabled");
+        } else {
+          nextButton.removeAttribute("disabled", true);
+        }
+      });
   });
 }
 
