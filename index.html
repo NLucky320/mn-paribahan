@@ -77,15 +77,15 @@
         <div class="py-7 max-w-[1170px] mx-auto ">
             <div
                 class="hero rounded-4xl bg-[linear-gradient(180.00deg,rgba(3,7,18,0.5),rgba(3,7,18,0)100%),url(./images/banner.png)] bg-cover bg-no-repeat rounded-[32px] flex flex-col items-center lg:h-[550px]">
-                <div class=" text-center">
+                <div class=" text-center p-4 md:p-0">
                     <div class="max-w-[742px] text-white text-center font-raleway pt-[36px] md:pt-[70px] md:pb-[66px]">
-                        <h1 class="mb-5 text-4xl md:text-6xl md:text-[64px] font-extrabold lg:leading-[86px]">End-to-End
+                        <h1 class="mb-5 text-5xl md:text-6xl md:text-[64px] font-extrabold lg:leading-[86px]">End-to-End
                             Travel with <span class="text-[#1DD100] pt-4">M.N Paribahan</span></h1>
                         <p class="my-2 lg:my-4 font-normal md:leading-[30px] text-lg">Experience the difference with our
                             bus service. Sit back, relax, and enjoy the journey knowing that you're traveling
                             with the best.</p>
                         <a href="#mn-paribahan"><button
-                                class="btn text-[#030712] font-bold text-xl bg-[#1DD100] rounded-xl px-6 lg:mt-4 border-none">Buy
+                                class="btn text-[#030712] font-bold text-xl bg-[#1DD100] rounded-xl px-6 border-none my-6">Buy
                                 Tickets</button></a>
                     </div>
                     <div class="flex gap-5 md:-mb-[66px] justify-between">
@@ -137,7 +137,7 @@
     </header>
     <main>
         <!-- Best offer section starts here -->
-        <section class="py-7 max-w-[1170px] mx-auto mt-28">
+        <section class="py-7 max-w-[1170px] mx-auto mt-6 md:mt-28 p-4 md:p-0">
             <h2 class="font-bold text-4xl text-center pb-10">Best offers for you</h2>
             <!-- coupon container starts here -->
             <div class="flex flex-col lg:flex-row justify-between gap-6">
@@ -178,8 +178,8 @@
 
         <!-- paribahan section starts here -->
         <section id="mn-paribahan"
-            class=" border-t-2 border-[#1DD100] rounded-t-[88px] bg-[#F7F8F8] mt-6 md:mt-28 pb-6 md:pb-28">
-            <div class="max-w-[1170px] mx-auto mt-[120px] ">
+            class=" border-t-2 border-[#1DD100] rounded-t-[88px] bg-[#F7F8F8] mt-6 md:mt-28 pb-6 md:pb-28 p-4 md:p-0">
+            <div class="max-w-[1170px] mx-auto mt-6 md:mt-[120px] ">
                 <!-- Title -->
                 <div class="text-center">
                     <h2 class="font-bold text-[40px]">M.N Paribahan</h2>
@@ -190,14 +190,14 @@
                 </div>
                 <!-- Ticket starts here-->
                 <div
-                    class="p-[32px] bg-[url(./images/info-devider.png)] bg-no-repeat bg-[center_right_17%] bg-contain bg-white rounded-3xl flex justify-between items-center mt-12">
-                    <div class="w-9/12">
+                    class="p-4 md:p-[32px] bg-[hidden] md:bg-[url(./images/info-devider.png)] bg-no-repeat bg-[center_right_17%] bg-contain bg-white rounded-3xl flex flex-col md:flex-row justify-between items-center mt-12">
+                    <div class="w-full md:w-9/12">
                         <!-- left part -->
                         <div class="flex justify-between items-center">
-                            <div class="flex space-x-[14px] items-center">
+                            <div class="flex space-x-1 md:space-x-[14px] items-center">
                                 <div><img src="./images/bus-logo.png" alt="" /></div>
                                 <div>
-                                    <h2 class="font-bold text-[32px]">M.N Paribahan</h2>
+                                    <h2 class="font-bold text-2xl md:text-[32px]">M.N Paribahan</h2>
                                     <p class="text-[18px] font-normal text-[#03071299] mt-2">
                                         Coach-009-WEB ! AC_Business
                                     </p>
@@ -225,7 +225,7 @@
                                 <p class="text-[18px] font-semibold">9:00 PM</p>
                             </div>
                             <hr class="my-6" style="border-top: dashed 2px rgba(3, 7, 18, 0.2)" />
-                            <div class="flex justify-between">
+                            <div class="flex flex-col md:flex-row justify-between">
                                 <div class="btn bg-[#0307120D] font-medium text-[rgba(3, 7, 18, 0.80)] text-[16px]">
                                     Boarding Point - Laxmipur
                                 </div>
@@ -247,9 +247,9 @@
                     </div>
                 </div>
                 <!-- Seats -->
-                <div class="p-8 bg-white rounded-3xl mt-[26px] flex">
+                <div class="p-8 bg-white rounded-3xl mt-[26px] flex flex-col md:flex-row">
                     <!-- Select Your Seat starts here-->
-                    <div style="border-right: dashed 2px rgba(3, 7, 18, 0.3)">
+                    <div class="" style="border-right: dashed 2px rgba(3, 7, 18, 0.3)">
                         <div class="pr-9">
                             <div>
                                 <h2 class="font-semibold text-[24px]">Select Your Seat</h2>
@@ -269,7 +269,7 @@
                                     </div>
                                 </div>
                                 <hr class="my-6" style="border-top: dashed 2px rgba(3, 7, 18, 0.2)" />
-                                <div class="flex justify-end">
+                                <div class="flex justify-center md:justify-end">
                                     <button class="btn w-[110px]">
                                         <img src="./images/tabler-icon-steering-wheel.svg" alt="" />
                                     </button>
@@ -320,146 +320,166 @@
                                     </div>
                                     <div class="grid grid-cols-2 gap-8">
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             A1
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             A2
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             B1
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             B2
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             C1
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             C2
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             D1
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             D2
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             E1
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             E2
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             F1
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             F2
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             G1
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             G2
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             H1
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             H2
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             I1
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             I2
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             J1
                                         </button>
                                         <button
-                                            class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                            class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                             J2
                                         </button>
                                     </div>
                                 </div>
                                 <div class="grid grid-cols-2 gap-8">
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         A3
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         A4
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         B3
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         B4
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         C3
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         C4
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         D3
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         D4
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         E3
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         E4
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         F3
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         F4
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         G3
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         G4
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         H3
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         H4
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         I3
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         I4
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         J3
                                     </button>
-                                    <button class="btn add-btn w-[110px] px-8 text-[#03071280] text-[18px] font-medium">
+                                    <button
+                                        class="btn add-btn w-[60px] md:w-[110px] px-2 md:px-8 text-[#03071280] text-[18px] font-medium">
                                         J4
                                     </button>
                                 </div>
@@ -468,7 +488,7 @@
                     </div>
 
                     <!-- Pricing-->
-                    <div class="w-5/12 pl-8">
+                    <div class="w-full md:w-5/12 pl-2 md:pl-8 mt-6 md:mt-0">
                         <h2 class="font-semibold text-[24px]">Select Your Seat</h2>
                         <hr class="my-6" style="border-top: dashed 2px rgba(3, 7, 18, 0.2)" />
                         <div class="rounded-xl bg-[#F7F8F8] p-8">
@@ -518,7 +538,8 @@
                             </div>
                             <div class="text-left">
                                 <label class="font-semibold " for="">Phone Number*</label>
-                                <input id="phone-number" type="number" placeholder="Enter your phone number"
+                                <input id="phone-number" type="tel" pattern="[0-9]"
+                                    placeholder="Enter your phone number"
                                     class="input mt-4 input-bordered py-7 w-full bg-[#FFF] text-[#03071266] border-[#0307121A]">
                             </div>
                             <div class="text-left">
@@ -569,7 +590,7 @@
         <footer class="p-10 bg-[#030712] text-neutral-content">
             <div class="max-w-[1170px] mx-auto ">
                 <div class=" lg:pb-[70px] lg:pt-[80px]">
-                    <div class="flex flex-col md:flex-row justify-between">
+                    <div class="flex flex-col md:flex-row justify-center md:justify-between">
                         <div>
                             <h2 class="font-extrabold text-[36px] font-raleway">M.N-Ticket</h2>
                             <p

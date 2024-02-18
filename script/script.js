@@ -49,16 +49,23 @@ for (const seatButton of allSeatButton) {
     } else {
       document.getElementById("discount-btn").setAttribute("disabled", true);
     }
+    document
+      .getElementById("phone-number")
+      .addEventListener("input", function (e) {
+        const inputValue = e.target.value;
+        const numericInput = inputValue.replace(/\D/g, "");
+        e.target.value = numericInput;
+      });
 
     document
       .getElementById("phone-number")
       .addEventListener("keyup", function (e) {
-        const number = e.target.value.toString().length;
+        const numb = e.target.value.toString().length;
         const nextButton = document.getElementById("next-btn");
-        if (bookedSeat > 0 && number > 0) {
+        if (numb > 0 && typeof numb === "number" && bookedSeat > 0) {
           nextButton.removeAttribute("disabled");
         } else {
-          nextButton.removeAttribute("disabled", true);
+          nextButton.setAttribute("disabled", true);
         }
       });
   });
