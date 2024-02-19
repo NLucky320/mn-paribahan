@@ -1,6 +1,8 @@
 const allSeatButton = document.querySelectorAll(".add-btn");
 let seatCount = 0;
 let seat = 40;
+let isSelected = false;
+let isTyped = false;
 for (const seatButton of allSeatButton) {
   seatButton.addEventListener("click", function (event) {
     if (seatCount < 4) {
@@ -36,6 +38,7 @@ for (const seatButton of allSeatButton) {
     } else {
       alert("You cannot buy more seats");
     }
+
     setElementValueById("available-seat", seat);
     setElementValueById("seat-count", seatCount);
     grandTotal();
@@ -43,7 +46,7 @@ for (const seatButton of allSeatButton) {
     const bookedSeat = parseInt(
       document.getElementById("seat-count").innerText
     );
-
+    isSelected = true;
     if (bookedSeat > 3) {
       document.getElementById("discount-btn").removeAttribute("disabled");
     } else {
@@ -56,6 +59,13 @@ for (const seatButton of allSeatButton) {
         const numericInput = inputValue.replace(/\D/g, "");
         e.target.value = numericInput;
       });
+    const phoneNumber = document.getElementById("phone-number");
+
+    if (bookedSeat > 0) {
+      phoneNumber.removeAttribute("disabled");
+    } else {
+      phoneNumber.setAttribute("disabled", true);
+    }
 
     document
       .getElementById("phone-number")
